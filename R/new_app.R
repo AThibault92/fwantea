@@ -128,7 +128,7 @@ write(s_main, file=rty)
 close(rty)
 
 dir.create("fct")
-
+dir.create("modules")
 file.edit(nom_main, fileEncoding = "UTF-8")
 # file.edit(nom_package, fileEncoding = "UTF-8")
 file.edit(nom_ui, fileEncoding = "UTF-8")
