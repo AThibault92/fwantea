@@ -32,6 +32,9 @@ ajout_package(\"",nom,"\",\"package\")
 
 # Création d'une nouvelle fonction
 new_fct(\"",nom,"\",\"nom fonction\")
+
+# Création de module
+new_module(\"nomdumodule\")
 ")
   write(s_main, file=nom_main, append = FALSE)
   file.edit(nom_main, fileEncoding = "UTF-8")
