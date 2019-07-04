@@ -14,5 +14,6 @@ new_project <- function(){
   dir.create("./output/figures")
   dir.create("rapport")
   dir.create("R")
+  dir.create("./R/fct")
   dir.create("package")
 }
