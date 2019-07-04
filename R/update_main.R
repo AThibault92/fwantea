@@ -8,7 +8,7 @@
 #' @examples
 update_main <- function(nom){
   nom_main <- paste0("0_", nom, "_main.R")
-  s_main <- paste0("library(aideshiny)
+  s_main <- paste0("library(fwantea)
 # Ouvrir les scripts de l'appli dev
 open_script(\"",nom,"\")
 

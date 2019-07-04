@@ -98,7 +98,7 @@ file.copy("P:/STATEA/98_modele_app/www/logo.jpg", "./www/logo.jpg")
 dir.create("scripts_test")
 dir.create("prod")
 
-s_main <- paste0("library(aideshiny)
+s_main <- paste0("library(fwantea)
 # Ouvrir les scripts de l'appli dev
 open_script(\"",nom,"\")
 
