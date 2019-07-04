@@ -13,7 +13,9 @@ new_fct <- function(nom_app, nom_fct){
   }
   nom_file_fct <- paste0(nom_app, "_fonctions.R")
   nom_new_fct <- paste0("./fct/", nom_fct, ".R")
-  fct_script_1 <- paste0(nom_fct, " <- function(){}")
+  fct_script_1 <- paste0(nom_fct, " <- function(){
+
+  }")
   fct_script_2 <- paste0("source(\"", nom_new_fct, "\", encoding = \"UTF-8\")")
   rty <- file(nom_new_fct ,encoding="UTF-8")
   write(fct_script_1, file=rty)
