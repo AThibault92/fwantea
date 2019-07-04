@@ -1,6 +1,6 @@
 Package: fwantea
 Title: Framework developpement R
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: person("Alexandre", "Thibault", email = "alexandre.thibault@anteagroup.com", role = c("aut", "cre"))
 Description: Framework de developpement sous R pour Anteagroup. Comporte une aide pour les applications shiny et pour l'organisation de projets R
 Depends: R (>= 3.6.0)
