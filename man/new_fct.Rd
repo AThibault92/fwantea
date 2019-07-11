@@ -4,7 +4,7 @@
 \alias{new_fct}
 \title{Créer une nouvelle fonction dans l'appli}
 \usage{
-new_fct(nom_app, nom_fct)
+new_fct(nom_app = NA, nom_fct)
 }
 \arguments{
 \item{nom_app}{nom de l'application shiny}

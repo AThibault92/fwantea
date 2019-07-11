@@ -16,4 +16,11 @@ new_project <- function(){
   dir.create("R")
   dir.create("./R/fct")
   dir.create("package")
+
+  script_main <- "# Liste des fonctionnalité du package fwantea
+  library(fwantea)
+
+  # Création d'une fonction
+  new_fct(\"nom de la fonction\")
+  "
 }

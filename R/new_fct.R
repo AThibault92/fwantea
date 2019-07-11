@@ -7,19 +7,31 @@
 #' @export
 #'
 #' @examples
-new_fct <- function(nom_app, nom_fct){
+new_fct <- function(nom_app = NA, nom_fct){
   if (!dir.exists("./fct")){
     dir.create("fct")
   }
-  nom_file_fct <- paste0(nom_app, "_fonctions.R")
-  nom_new_fct <- paste0("./fct/", nom_fct, ".R")
-  fct_script_1 <- paste0(nom_fct, " <- function(){
+  if (!is.na(nom_app)){
+    nom_file_fct <- paste0(nom_app, "_fonctions.R")
+    nom_new_fct <- paste0("./fct/", nom_fct, ".R")
+    fct_script_1 <- paste0(nom_fct, " <- function(){
 
   }")
-  fct_script_2 <- paste0("source(\"", nom_new_fct, "\", encoding = \"UTF-8\")")
-  rty <- file(nom_new_fct ,encoding="UTF-8")
-  write(fct_script_1, file=rty)
-  close(rty)
-  write(fct_script_2,file=nom_file_fct,append=TRUE)
-  file.edit(nom_new_fct)
+    fct_script_2 <- paste0("source(\"", nom_new_fct, "\", encoding = \"UTF-8\")")
+    rty <- file(nom_new_fct ,encoding="UTF-8")
+    write(fct_script_1, file=rty)
+    close(rty)
+    write(fct_script_2,file=nom_file_fct,append=TRUE)
+    file.edit(nom_new_fct)
+  } else {
+    nom_new_fct <- paste0("./fct/", nom_fct, ".R")
+    fct_script_1 <- paste0(nom_fct, " <- function(){
+
+  }")
+    rty <- file(nom_new_fct ,encoding="UTF-8")
+    write(fct_script_1, file=rty)
+    close(rty)
+    file.edit(nom_new_fct)
+  }
+
 }
