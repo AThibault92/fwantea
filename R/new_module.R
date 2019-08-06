@@ -1,11 +1,12 @@
 #' Nouveau module shiny
+#' @description Permet de générer le script d'un module, ainsi que le code à copier coller dans l'ui et le server.
 #'
 #' @param nom_mod nom du module
 #'
 #' @return un script avec le module shiny
 #' @export
 #'
-#' @examples
+#' @examples print(iris$Species)
 new_module <- function(nom_mod){
   script <- paste0("# Module UI
 
